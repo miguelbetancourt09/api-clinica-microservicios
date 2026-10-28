@@ -1,0 +1,174 @@
+{
+  "info": {
+    "name": "02_api_clinica",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "pacientes-service: GET /",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8091/api/pacientes"
+      }
+    },
+    {
+      "name": "pacientes-service: GET /1",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8091/api/pacientes/1"
+      }
+    },
+    {
+      "name": "pacientes-service: POST /",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8091/api/pacientes",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Ana Perez\",\n  \"correo\": \"ana@example.com\",\n  \"telefono\": \"Ejemplo\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "pacientes-service: PUT /1",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8091/api/pacientes/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nombre\": \"Ana Perez\",\n  \"correo\": \"ana@example.com\",\n  \"telefono\": \"Ejemplo\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "pacientes-service: DELETE /1",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8091/api/pacientes/1"
+      }
+    },
+    {
+      "name": "citas-service: GET /",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8092/api/citas"
+      }
+    },
+    {
+      "name": "citas-service: GET /1",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8092/api/citas/1"
+      }
+    },
+    {
+      "name": "citas-service: POST /",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8092/api/citas",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"pacienteId\": 1,\n  \"fecha\": \"2026-11-12\",\n  \"motivo\": \"Revision general\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "citas-service: PUT /1",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8092/api/citas/1",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"pacienteId\": 1,\n  \"fecha\": \"2026-11-12\",\n  \"motivo\": \"Revision general\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "citas-service: DELETE /1",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "http://localhost:8092/api/citas/1"
+      }
+    }
+  ]
+}
